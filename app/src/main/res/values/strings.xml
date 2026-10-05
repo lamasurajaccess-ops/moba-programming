@@ -7,6 +7,7 @@
     <string name="app_subtitle">Track your daily income and expenses seamlessly. Built for CACS351 Mobile Programming.</string>
     <string name="course_info">Bachelor in Computer Applications (BCA)</string>
     <string name="btn_get_started">Get Started</string>
+    <string name="btn_start_lab">Start Lab</string>
     <string name="toast_welcome">Lab 1 Running Successfully on Emulator!</string>
 
     <!-- Lab 2: Unit 3 - Layout Types & Basic Widgets (Add Expense Form) -->
