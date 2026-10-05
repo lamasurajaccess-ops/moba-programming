@@ -3,8 +3,7 @@
     Lab 1: Unit 2 - View Hierarchy, Widget Attributes & String Resources
     ConstraintLayout allows placing views relative to each other and parent bounds without deep nesting.
 -->
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -35,46 +34,65 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/card_background"
         app:cardCornerRadius="16dp"
         app:cardElevation="4dp"
-        app:cardBackgroundColor="@color/card_background"
-        app:strokeColor="@color/primary_green"
-        app:strokeWidth="1dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLabTitle">
+        app:layout_constraintTop_toBottomOf="@id/tvLabTitle"
+        app:strokeColor="@color/primary_green"
+        app:strokeWidth="1dp" />
 
-    </com.google.android.material.card.MaterialCardView>
 
     <!--
         Interactive Material Button
         Demonstrates event handling preparation in Lab 1.
     -->
+
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnGetStarted"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
         android:text="@string/btn_get_started"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:cornerRadius="12dp"
         app:backgroundTint="@color/primary_green"
+        app:cornerRadius="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_start_lab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/btn_start_lab"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="@color/primary_green"
+        app:cornerRadius="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.054" />
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout"
+        android:layout_width="314dp"
+        android:layout_height="292dp"
         android:gravity="center"
         android:orientation="vertical"
         android:padding="24dp"
         app:layout_constraintBottom_toTopOf="@+id/btnGetStarted"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.489"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvLabTitle"
+        app:layout_constraintTop_toTopOf="@+id/cardWelcome"
         app:layout_constraintVertical_bias="0.5"
         tools:ignore="MissingConstraints">
 
